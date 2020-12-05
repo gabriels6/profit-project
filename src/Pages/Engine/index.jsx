@@ -1,8 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import axios from 'axios'
 
-//Alpha API Key = K38Q27JQS8XK8BHK
-
 import {Main,MainTitle,Text,FloatingAddButton,Snippet} from './styles.js';
 import {StockPart,StockComparison} from '../../components'
 
