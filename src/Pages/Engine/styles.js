@@ -1,14 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const Main = styled.div`
+export const StockMain = styled.div`
     width:100%;
-    height:600px;
+    min-height:600px;
     background:white;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+`;
+
+export const Main = styled.div`
+width:100%;
+display:flex;
+flex-direction:column;
+flex-align:center;
+justify-content:center;
 `;
 
 const Card = `

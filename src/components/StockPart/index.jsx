@@ -1,5 +1,6 @@
 import React from 'react'
-import {StockDetails,StockTitle,BusinessName,StockSubTitle,ExtraPart,ExtraSubtitle,ExtraDetails} from './styles'
+import {StockDetails,BusinessName,ExtraPart,ExtraDetails} from './styles'
+import {StockTitle,StockSubTitle,ExtraSubTitle} from '../../components';
 
 const StockControl = ({stock}) => {
     
@@ -13,31 +14,31 @@ const StockControl = ({stock}) => {
                     <p>{stock.Country}</p>
                     <ExtraDetails>
                         <ExtraPart>
-                            <ExtraSubtitle>Retorno por ativo em 12 mêses</ExtraSubtitle>
+                            <ExtraSubTitle>Retorno por ativo em 12 mêses</ExtraSubTitle>
                                 {stock.RevenuePerShareTTM}
                             </ExtraPart>
                             <ExtraPart>
-                            <ExtraSubtitle>Margem de lucros</ExtraSubtitle>
+                            <ExtraSubTitle>Margem de lucros</ExtraSubTitle>
                                 {stock.ProfitMargin}
                             </ExtraPart>
                             <ExtraPart>
-                            <ExtraSubtitle>Lucro Bruto em 12 Mêses</ExtraSubtitle>
+                            <ExtraSubTitle>Lucro Bruto em 12 Mêses</ExtraSubTitle>
                                 {stock.GrossProfitTTM}
                             </ExtraPart>
                             <ExtraPart>
-                                <ExtraSubtitle>Dividendos por ação</ExtraSubtitle>
+                                <ExtraSubTitle>Dividendos por ação</ExtraSubTitle>
                                 {stock.DividendPerShare}
                             </ExtraPart>
                             <ExtraPart>
-                                <ExtraSubtitle>Dividend Yield</ExtraSubtitle>
+                                <ExtraSubTitle>Dividend Yield</ExtraSubTitle>
                                 {stock.DividendYield}
                             </ExtraPart>
                             <ExtraPart>
-                                <ExtraSubtitle>Preço-Alvo</ExtraSubtitle>
+                                <ExtraSubTitle>Preço-Alvo</ExtraSubTitle>
                                 {stock.AnalystTargetPrice}
                             </ExtraPart>
                         </ExtraDetails>
-                    </StockDetails>
+            </StockDetails>
     )
 }
 

@@ -1,31 +1,14 @@
 import styled from 'styled-components'
+import {Title} from '../../components';
 
-
-const Title = `
-    
-    font-family:'Staatliches';
-`;
-
-const Card = `
-    box-shadow: 0px 2px 4px 3px rgba(0, 0, 0, 0.25);
-`;
 
 export const StockDetails = styled.div`
-    ${Card}
+    box-shadow: 0px 2px 4px 3px rgba(0, 0, 0, 0.25);
     width:90vw;
     margin:32px 5vw;
     box-sizing:border-box;
     padding: 1px 32px ;
     
-`;
-
-export const StockTitle = styled.p`
-    ${Title}
-    font-size:48px;
-
-    @media(max-width:${(props) => props.theme.limits.screenlimit}){
-        font-size:24px;
-    }
 `;
 
 export const StockSubTitle = styled.p`
@@ -65,10 +48,3 @@ export const ExtraPart = styled.div`
     margin-bottom:32px;
 `;
 
-export const ExtraSubtitle = styled.div`
-    ${Title}
-    margin-bottom:12px;
-    font-size:18px;
-
-    
-`; 
